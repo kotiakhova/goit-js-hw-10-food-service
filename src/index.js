@@ -14,8 +14,6 @@ function buildPost(posts) {
     const markup = posts.map( post => postsItemTemplate(post)).join('')
     return markup
 
-    
-
 
 }
 menuList.insertAdjacentHTML('beforeend', buildPost(posts));
