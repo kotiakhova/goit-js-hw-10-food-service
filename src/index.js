@@ -6,7 +6,7 @@ import './styles.css';
 
 
 const menuList = document.querySelector('ul.js-menu');
-console.log(menuList);
+
 
 
 

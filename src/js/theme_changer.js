@@ -10,7 +10,7 @@ const Theme = {
 const currentTheme = localStorage.getItem('theme');
 
 
-localStorage.setItem('theme', 'LIGHT');
+body.classList.add(Theme.LIGHT);
 
 handleLocalStorageTheme();
 
@@ -23,12 +23,13 @@ function handleLocalStorageTheme (){
             body.classList.add(Theme.LIGHT);
             body.classList.remove(Theme.DARK);
 
-        } else {
+        } else if (currentTheme === 'DARK'){
             body.classList.add(Theme.DARK);
             body.classList.remove(Theme.LIGHT);
             input.checked = true;
         }
       }
+      
 }
 
 
@@ -48,3 +49,4 @@ function handleClick() {
     }
 
 ;
+console.log(body);
